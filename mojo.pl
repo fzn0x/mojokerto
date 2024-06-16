@@ -18,7 +18,7 @@ put '/todo/:id' => sub ($c) {
     $c->render(json => { message => "Data updated", data => $id });
 };
 
-del => '/todo/:id' => sub ($c) {
+del '/todo/:id' => sub ($c) {
     my $id = $c->param('id');   
     $c->render(json => { message => "Data deleted", data => $id });
 };
